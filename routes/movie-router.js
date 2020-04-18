@@ -1,13 +1,13 @@
-const express = require('express')
+const express = require('express');
 
-const MovieCtrl = require('../controllers/movie-ctrl')
+const PatientQuestCtrl = require('../controllers/movie-ctrl');
 
-const router = express.Router()
+const router = express.Router();
 
-router.post('/movie', MovieCtrl.createMovie)
-router.put('/movie/:id', MovieCtrl.updateMovie)
-router.delete('/movie/:id', MovieCtrl.deleteMovie)
-router.get('/movie/:id', MovieCtrl.getMovieById)
-router.get('/movies', MovieCtrl.getMovies)
+router.post('/consulta', PatientQuestCtrl.createPatientQuest);
+router.put('/consulta/:id', PatientQuestCtrl.updatePatientQuest);
+router.delete('/consulta/:id', PatientQuestCtrl.deletePatientQuest);
+router.get('/consulta/:id', PatientQuestCtrl.getPatientQuestById);
+router.get('/consultas', PatientQuestCtrl.getPatientQuests);
 
-module.exports = router
+module.exports = router;

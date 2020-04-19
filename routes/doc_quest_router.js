@@ -1,6 +1,6 @@
 const express = require('express');
 
-const PatientQuestCtrl = require('../controllers/movie-ctrl');
+const PatientQuestCtrl = require('../controllers/patient_quest_ctrl');
 
 const router = express.Router();
 
